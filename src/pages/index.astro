@@ -6,46 +6,86 @@ import Footer from '../components/Footer.astro';
 <html lang="ja">
   <BaseHead title="idxma.net" />
   <body style="font-family: 'Zen Kaku Gothic New', sans-serif; background-color: #dcdcdc; margin: 0; padding: 0;">
-    <header style="text-align: center; padding: 2rem 0;">
+    <header style="text-align: center; padding: 2rem 1rem;">
 
-      <img src="/me-icon.png" alt="プロフィール画像" style="width: 200px; height: 165px; border-radius: 50%;" />
-      <h1 style="margin: 1rem 0;">kou</h1>
-      <p style="margin: 0 0 2rem;">PC, 音響, デザイン, 車などがすき。<br>
+      <img src="/me-icon.png" alt="プロフィール画像" style="width: clamp(120px, 30vw, 200px); height: auto; border-radius: 50%; aspect-ratio: 1;" />
+      <h1 style="margin: 1rem 0; font-size: clamp(1.5rem, 5vw, 2rem);">kou</h1>
+      <p style="margin: 0 0 2rem; font-size: clamp(0.875rem, 3vw, 1rem);">PC, 音響, デザイン, 車などがすき。<br>
       細々と暮らしています。</p>
 
-      <div style="display: flex; justify-content: center; gap: 1rem;">
-        <a href="https://github.com/idxma" target="_blank">
-          <img src="/github-icon.png" alt="GitHub" style="width: 40px; height: 40px;" />
-          <div style = "margin-top: 8px;">GitHub</div>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="https://github.com/idxma" target="_blank" style="text-align: center;">
+          <img src="/github-icon.png" alt="GitHub" style="width: clamp(32px, 8vw, 40px); height: clamp(32px, 8vw, 40px);" />
+          <div style="margin-top: 8px; font-size: clamp(0.75rem, 2.5vw, 1rem);">GitHub</div>
         </a>
-        <a href="https://x.com/idxma" target="_blank">
-          <img src="/x-icon.png" alt="X" style="width: 40px; height: 40px;" />
-          <div style = "margin-top: 8px;">X</div>
+        <a href="https://x.com/idxma" target="_blank" style="text-align: center;">
+          <img src="/x-icon.png" alt="X" style="width: clamp(32px, 8vw, 40px); height: clamp(32px, 8vw, 40px);" />
+          <div style="margin-top: 8px; font-size: clamp(0.75rem, 2.5vw, 1rem);">X</div>
         </a>
-        <a href="https://keybase.io/idxma" target="_blank">
-          <img src="/keybase-icon.png" alt="keybase" style="width: 40px; height: 40px;" />
-          <div style = "margin-top: 8px;">Keybase</div>
+        <a href="https://keybase.io/idxma" target="_blank" style="text-align: center;">
+          <img src="/keybase-icon.png" alt="keybase" style="width: clamp(32px, 8vw, 40px); height: clamp(32px, 8vw, 40px);" />
+          <div style="margin-top: 8px; font-size: clamp(0.75rem, 2.5vw, 1rem);">Keybase</div>
         </a>
       </div>
     </header>
 
-	<main style="padding: 2rem; display: flex; flex-direction: column; align-items: center; border: 2px solid #000; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 800px; margin: 0 auto;">
-		<section style="margin-bottom: 2rem; width: 100%; text-align: left;">
-		  <h2>Affiliation</h2>
-		  <p>・Department of Electrical and Electronic Engineering, Tokyo Denki University</p>
-		<section>
-			<section style="margin-bottom: 2rem; width: 100%; text-align: left;">
-				<h2>Favorites</h2>
-				<p>・Computer： Infrastructure, OS<br>
-        ・Audio：最近はMarantz HD-AMP1で雑多に聴く事が多い<br>
-        ・Game：FF14, VRC, Splatoon</p>
-			</section>
-		<section style="margin-bottom: 2rem; width: 100%; text-align: left;">
-		  <h2>Activities</h2>
-		  <p>・CODE BLUE 2024 学生スタッフ<br>
-		  ・セキュリティ・ミニキャンプ in 宮城 2024</p>
-		</section>
-	  </main>
+    <main style="padding: 1rem; display: flex; flex-direction: column; align-items: center; border: 2px solid #000; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 800px; margin: 0 auto; font-size: clamp(0.875rem, 2.5vw, 1rem);">
+        <section style="margin-bottom: 2rem; width: 100%; text-align: left;">
+          <h2 style="font-size: clamp(1.25rem, 4vw, 1.5rem);">Affiliation</h2>
+          <p>・Department of Electrical and Electronic Engineering, Tokyo Denki University</p>
+
+    <h2 style="font-size: clamp(1.25rem, 4vw, 1.5rem);">Favorites</h2>
+    <ul style="padding-left: 1.25rem;">
+      <li>Linux Distribution: <a href="https://archlinux.org">Arch Linux</a></li>
+      <li>Window Manager:
+        <ul>
+          <li><a href="https://i3wm.org/">i3</a></li>
+          <li><a href="https://swaywm.org/">sway</a></li>
+        </ul>
+      </li>
+      <li>Game:
+        <ul>
+          <li><a href="https://jp.finalfantasyxiv.com/lodestone/character/26399914/">FF14</a></li>
+          <li>Splatoon</li>
+          <li>VRChat</li>
+        </ul>
+      </li>
+      <li>Audio:
+        <ul>
+          <li>最近はMarantz HD-AMP1で雑多に聴いてる</li>
+          <li>AKG K701はいいぞ!!</li>
+          <li>イヤホンはFinal A6000, A4000など</li>
+        </ul>
+      </li>
+      <li>Main PC: 
+        <ul>
+          <li>CPU: AMD Ryzen7 7800X3D</li>
+          <li>CPU Cooler: Noctua NH-D15 G2 LBC</li>
+          <li>MB: ASRock B650 Steel Legend WiFi</li>
+          <li>RAM: Crucial PRO DDR5-5600 32GB x4</li>
+          <li>GPU: ZOTAC RTX 5080 16GB</li>
+          <li>SSD #1: Crucial T500 1TB</li>
+          <li>SSD #2: Crucial P3 Plus 2TB</li>
+          <li>PSU: SUPERFLOWER LEADEX III GOLD 1000W</li>
+          <li>PC Case: Fractal Design North Charcoal Black TG Dark</li>
+          <li>OS: Windows 11 Pro 25H2</li>
+        </ul>
+      </li>
+      <li>Anime:
+        <ul>
+          <li><a href="http://www.konaka.com/alice6/lain/">serial experiments lain</a></li>
+          <li><a href="https://www.swordart-online.net/">ソードアート・オンライン</a></li>
+          <li><a href="https://www.monogatari-series.com/">〈物語〉シリーズ</a></li>
+        </ul>
+      </li>
+    </ul>
+        </section>
+        <section style="margin-bottom: 2rem; width: 100%; text-align: left;">
+          <h2 style="font-size: clamp(1.25rem, 4vw, 1.5rem);">Activities</h2>
+          <p>・CODE BLUE 2024 学生スタッフ<br>
+          ・セキュリティ・ミニキャンプ in 宮城 2024</p>
+        </section>
+      </main>
 
     <Footer />
   </body>
